@@ -4,9 +4,10 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  /* align-items: center; */
 }
 .footer_inner_container {
-  width: 60%;
+  width: 90%;
 }
 .footer_icons {
   width: 12%;

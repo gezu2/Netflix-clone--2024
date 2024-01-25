@@ -1,0 +1,3 @@
+https://api.themoviedb.org/3/discover/tv?api_key=b721bb3157f7ee65784560f16daebd00&with_networks=213
+api key=b721bb3157f7ee65784560f16daebd00
+discover/tv?api_key=${API_KEY}&with_networks=213
