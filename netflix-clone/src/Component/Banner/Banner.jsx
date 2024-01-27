@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import{ useEffect, useState } from "react";
 import axios from "../../utils/axios";
 import requests from "../../utils/requests";
-import './Banner.css';
+import "./Banner.css";
 
 const Banner = () => {
   const [movie, setMovie] = useState({});
@@ -36,21 +36,20 @@ const Banner = () => {
         backgroundImage: `url(https://images.tmdb.org/t/p/original${movie?.backdrop_path})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="banner_contents">
-        <h1 className="banner_title">
+      }}>
+      <div className="banner__contents">
+        <h1 className="banner__title">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
-        <div className="banner_buttons">
-          <button className="banner_buttons play">Play</button>
-          <button className="banner_buttons">My List</button>
+        <div className="banner__buttons">
+          <button className="banner__button play">Play</button>
+          <button className="banner__button"> My List</button>
         </div>
-        <h1 className="banner_description">
+        <h1 className="banner__description">
           {truncate(movie?.overview, 150)}
         </h1>
       </div>
-      <div className="button_fadeBottom" />
+      <div className="button__fadeBottom" />
     </div>
   );
 };
