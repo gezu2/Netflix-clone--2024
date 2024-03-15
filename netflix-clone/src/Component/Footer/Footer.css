@@ -2,19 +2,23 @@
   background-color: #111;
   color: grey;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
-  /* align-items: center; */
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .footer_inner_container {
-  width: 90%;
+  width: 70%;
 }
 .footer_icons {
   width: 12%;
   display: flex;
   justify-content: space-between;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   color: #fff;
+  align-items: center;
+  /* margin-left: 100px; */
 }
 .footer_data {
   display: flex;
@@ -27,6 +31,8 @@
   justify-content: space-around;
   height: 12vh;
   color: #fff;
+ 
+
 }
 .footer_data ul li {
   cursor: pointer;
@@ -40,6 +46,7 @@
   margin: 11px 0;
   cursor: pointer;
   color: #fff;
+  text-align: center;
 }
 .copy-write {
   font-size: 12px;

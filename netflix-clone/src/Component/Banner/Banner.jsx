@@ -7,8 +7,7 @@ const Banner = () => {
   const [movie, setMovie] = useState({});
 
   useEffect(() => {
-    fetchData();
-  }, []);
+  
 
   async function fetchData() {
     try {
@@ -23,9 +22,16 @@ const Banner = () => {
       console.error("Error fetching data:", error);
     }
   }
-
-  function truncate(str, n) {
-    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  fetchData();
+  }, []);
+  function truncate(str, n,) {
+      // return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+   
+      if (str && str.length > n) {
+        return str.substr(0, n - 1) + "...";
+    } else {
+        return str;
+    }
   }
 
   return (

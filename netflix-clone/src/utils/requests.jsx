@@ -1,5 +1,6 @@
 
  const API_KEY = import.meta.env.VITE_TMDB_API_KEY
+ console.log("API_KEY")
 const requests = {
   fetchTrending:`/trending/all/day?api_key=${API_KEY}&language=en-US`,
   fetchNetflixOriginals:`/discover/tv?api_key=${API_KEY}&with_networks=213`,
@@ -13,4 +14,6 @@ const requests = {
   fetchkids: `/discover/tv?api_key=${API_KEY}&with_genres=10762`,
 };
 export default requests;
+
+
 

@@ -11,7 +11,7 @@
   transition: all 0.5ms;
   transition-timing-function: ease-in;
   z-index: 1;
-  /* background-color:blueviolet;  */
+ 
 }
 .nav_black {
   background-color: rgb(20, 20, 20);
